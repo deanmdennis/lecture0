@@ -1,0 +1,65 @@
+h1 {
+		color: blue;
+		text-align: center;
+}
+div {
+		background-color: teal;
+		width: 100px;
+		height: 100px;
+		margin: 30px;
+		padding: 20px; 
+		border: 5px solid red;
+}
+#top {
+	font-size: 36px;
+}
+#middle {
+	font-size: 24px;
+}
+#bottom {
+	font-size: 12px;
+}
+.name {
+	font-weight: bold;
+}
+
+<!-- Only selects immediate children of ol list -->
+ol > li {
+	color: red;
+}
+<!-- Selects all descendts of ol -->
+ol li {
+	color: red;
+}
+
+<!-- Puts a little arrow and Click here: before everything styled with a tag -->
+a::before {
+	content: "\21d2 Click here: ";
+	font-weight: bold;
+}
+
+
+<!-- Responsive Flexbox usage example -->
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container > div {
+	background-color: spinggreen;
+	font-size: 20px;
+	margin: 20px;
+	padding: 20px;
+	width: 200px;
+}
+
+<!-- Grid style -->
+.grid {
+	background-color: green;
+	display: grid;
+	padding: 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	grid-template-columns: 200px 200px auto;
+	                       <!-- 1, 2, 3rd column -->
+}
